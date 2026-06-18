@@ -1,10 +1,13 @@
 from enum import Enum
 
-######## Movie Enums #########
 
-class LanguageEnum(str,Enum):
+# ---------------------------------------------------------------------------
+# Movie
+# ---------------------------------------------------------------------------
+
+class LanguageEnum(str, Enum):
     English = "English"
-    Hindi = "Hindi" 
+    Hindi = "Hindi"
     Tamil = "Tamil"
     Kannada = "Kannada"
     Telugu = "Telugu"
@@ -12,14 +15,16 @@ class LanguageEnum(str,Enum):
     Marathi = "Marathi"
     Sanskrit = "Sanskrit"
 
-class FormatEnum(str,Enum):
+
+class FormatEnum(str, Enum):
     _2D = "2D"
     _3D = "3D"
     _4DX = "4DX"
-    _4DX_3D = "4DX 3D" 
+    _4DX_3D = "4DX 3D"
     IMAX_3D = "IMAX 3D"
 
-class GenreEnum(str,Enum):
+
+class GenreEnum(str, Enum):
     Drama = "Drama"
     Action = "Action"
     Thriller = "Thriller"
@@ -36,7 +41,11 @@ class GenreEnum(str,Enum):
     Biography = "Biography"
     Horror = "Horror"
 
-######## Artists Enums #########
+
+# ---------------------------------------------------------------------------
+# Artists
+# ---------------------------------------------------------------------------
+
 class OccupationEnum(str, Enum):
     Actor = "Actor"
     Musician = "Musician"
@@ -46,7 +55,7 @@ class OccupationEnum(str, Enum):
     Cameraman = "Cameraman"
     Music_Director = "Music Director"
     Composer = "Composer"
-    Background_Scorev= "Background Score"
+    Background_Scorev = "Background Score"
     Special_Appearances = "Special Appearances"
     Lyricist = "Lyricist"
     Writer = "Writer"
@@ -54,7 +63,11 @@ class OccupationEnum(str, Enum):
     Dialogue_Writer = "Dialogue Writer"
     Voice_Cast = "Voice Cast"
 
-######## Venue Enums #########
+
+# ---------------------------------------------------------------------------
+# Venue
+# ---------------------------------------------------------------------------
+
 class FacilitiesEnum(str, Enum):
     Parking_Facility = "Parking Facility"
     Ticket_Cancellation = "Ticket Cancellation"
@@ -62,18 +75,30 @@ class FacilitiesEnum(str, Enum):
     M_Ticket = "M Ticket"
     Food_Court = "Food Court"
 
-######## Booking Enums #########
+
+# ---------------------------------------------------------------------------
+# Booking
+# ---------------------------------------------------------------------------
+
 class BookingEnum(str, Enum):
     Booked = "Booked"
     Cancelled = "Cancelled"
 
-######## User Gender Enums #########
+
+# ---------------------------------------------------------------------------
+# User
+# ---------------------------------------------------------------------------
+
 class GenderEnum(str, Enum):
     Male = "Male"
     Female = "Female"
 
-######## Seat Status Enums #########
-class SeatStatus(str,Enum):
+
+# ---------------------------------------------------------------------------
+# Seat status
+# ---------------------------------------------------------------------------
+
+class SeatStatus(str, Enum):
     Sold_Out = "Sold Out"
     Selected = "Selected"
     Available = "Available"
