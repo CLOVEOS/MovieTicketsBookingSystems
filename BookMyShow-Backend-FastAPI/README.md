@@ -1,4 +1,4 @@
-Here is the refactored README with the emoticons removed and the terminal commands formatted into clean markdown code blocks for better readability.
+
 
 ---
 
