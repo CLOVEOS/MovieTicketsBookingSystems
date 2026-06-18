@@ -14,7 +14,7 @@ class ShowScheduleCreate(ShowSchedules):
 class ShowScheduleRead(ShowSchedules):
     schedule_id : int
     model_config=ConfigDict(from_attributes=True)
-    
+
 ######### SHOW TIMINGS #########
 class ShowScheduleTimings(BaseModel):
     schedule_id : int
@@ -22,11 +22,11 @@ class ShowScheduleTimings(BaseModel):
     format : FormatEnum
     show_date : date
     show_time : time
-    is_active : bool =True
+    is_active : bool = True
     is_completed : bool = False
 
 class ShowTimingCreate(ShowScheduleTimings):
-    pass 
+    pass
 
 class ShowTimingRead(ShowScheduleTimings):
     show_id : int
